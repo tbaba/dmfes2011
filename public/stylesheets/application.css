@@ -1,0 +1,43 @@
+h1, h2, h3, h4, h5, h6,
+p, div, span,
+form, input, textarea,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+#wrapper {
+  width: 900px;
+  margin: 0 auto; }
+
+#header h1 {
+  font-size: 36px;
+  font-weight: bold; }
+#header ul {
+  padding: 0;
+  list-style: none; }
+  #header ul li {
+    text-align: center;
+    margin: 0 2px;
+    width: 18%;
+    float: left;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px; }
+    #header ul li.top {
+      background: gray; }
+    #header ul li.news {
+      background: red; }
+    #header ul li.about {
+      background: yellow; }
+    #header ul li.artists {
+      background: blue; }
+    #header ul li.access {
+      background: green; }
+
+#header:after {
+  clear: both; }
+
+#contents {
+  clear: both; }
