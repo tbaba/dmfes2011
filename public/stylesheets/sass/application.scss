@@ -72,3 +72,31 @@ body {
   -moz-border-radius:10px;
   -webkit-border-radius:10px;
 }
+
+#contents article {
+  width:70%;
+  padding:5px;
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  background:white;
+
+  h2 {
+    .date {
+      font-size:14px;
+      font-weight:bold;
+      width:50px;
+      float:left;
+
+      padding:3px;
+      border-radius:3px;
+      -moz-border-radius:3px;
+      -webkit-border-radius:3px;
+      border:1px dotted gray;
+    }
+    .title {float:left;}
+  }
+  .body {
+    clear:both;
+  }
+}
