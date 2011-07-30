@@ -2,70 +2,73 @@ h1, h2, h3, h4, h5, h6,
 p, div, span,
 form, input, textarea,
 body {
-    margin:0;
-    padding:0;
-    border:0;
+  margin:0;
+  padding:0;
+  border:0;
 }
 #wrapper {
-    width:900px;
-    margin:0 auto;
+  width:900px;
+  margin:0 auto;
 }
 #header {
-    h1 {
-        font: {
-            size: 36px;
-            weight:bold;
-        }
-    }
-    ul {
-        padding:0;
-        margin:0 auto;
-        list-style:none;
-        white-space:nowrap;
-        width:768px;
-        li {
-            text-align:center;
-            margin:2px 2px 0;
-            width:150px;
-            height:30px;
-            float:left;
-            -webkit-border-radius:5px;
-            -moz-border-radius:5px;
-            &.top { background:gray; }
-            &.news { background:red; }
-            &.about { background:yellow; }
-            &.artists { background:blue; }
-            &.access { background:green; }
-            &.current {
-              height:33px;
-              -webkit-border-bottom-left-radius: 0;
-              -webkit-border-bottom-right-radius: 0;
-              -moz-border-radius-bottomleft: 0;
-              -moz-border-radius-bottomright: 0;
-            }
-            &.first { margin: 2px 2px 0 0; }
-            &.last  { margin: 2px 0 0 2px; }
-            a {
-              display:block;
-            }
-        }
-    }
-    a {
-      text-decoration:none;
-    }
+  h1 {
+    font: {
+      size: 36px;
+      weight:bold;
+      }
+  }
+  ul {
+    padding:0;
+    margin:0 auto;
+    list-style:none;
+    white-space:nowrap;
+    width:768px;
+    li {
+      vertical-align:text-bottom;
+      text-align:center;
+      margin:2px 2px 0;
+      width:150px;
+      height:30px;
+      float:left;
+      -webkit-border-radius:5px;
+      -moz-border-radius:5px;
+      &.top { background:gray; }
+      &.news { background:red; }
+      &.about { background:yellow; }
+      &.artists { background:blue; }
+      &.access { background:green; }
+      &.current {
+        height:33px;
+        -webkit-border-bottom-left-radius: 0;
+        -webkit-border-bottom-right-radius: 0;
+        -moz-border-radius-bottomleft: 0;
+        -moz-border-radius-bottomright: 0;
+          }
+        &.first { margin: 2px 2px 0 0; }
+        &.last  { margin: 2px 0 0 2px; }
+        a { display:block; }
+      }
+  }
+  a {
+    text-decoration:none;
+  }
 }
 
 #header:after {
-    clear:both;
+  clear:both;
 }
 
 #contents {
-    clear:both;
-    &.top { border:2px solid gray; }
-    &.news { border:2px solid red; }
-    &.about { border:2px solid yellow; }
-    &.artists { border:2px solid blue; }
-    &.access { border:2px solid green; }
+  clear:both;
+  &.top { background: gray; }
+  &.news { background:red; }
+  &.about { background:yellow; }
+  &.artists { background:blue; }
+  &.access { background:green; }
 
-    padding:5px;
+  padding:10px;
+
+  border-radius:10px;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
 }
