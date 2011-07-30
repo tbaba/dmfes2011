@@ -19,6 +19,40 @@
           %li{:class => "#{current_tab('access')} last"}= link_to "ACCESS", access_path
 
       #contents{:class => current_tab_name}
-        = yield
+        .left_col
+          = yield
+        .right_col
+          :plain
+            <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+            <script>
+              new TWTR.Widget({
+                version: 2,
+                type: 'profile',
+                rpp: 5,
+                interval: 6000,
+                width: 'auto',
+                height: 300,
+                theme: {
+                  shell: {
+                    background: '#ffffff',
+                    color: '#666666'
+                  },
+                  tweets: {
+                    background: '#ffffff',
+                    color: '#424242',
+                    links: '#2207eb'
+                  }
+                },
+                features: {
+                  scrollbar: false,
+                  loop: false,
+                  live: true,
+                  hashtags: true,
+                  timestamp: true,
+                  avatars: false,
+                  behavior: 'default'
+                }
+              }).render().setUser('dmfes').start();
+            </script>
 
       #footer
