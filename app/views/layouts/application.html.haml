@@ -14,7 +14,7 @@
         %ul#gnav
           %li{:class => "#{current_tab('top')} first"}= link_to "TOP", root_path
           %li{:class => current_tab('about')}= link_to "ABOUT", about_path
-          %li{:class => current_tab('news')}= "NEWS"
+          %li{:class => current_tab('news')}= link_to "NEWS", news_index_path
           %li{:class => current_tab('artists')}= "ARTISTS"
           %li{:class => "#{current_tab('access')} last"}= link_to "ACCESS", access_path
 
