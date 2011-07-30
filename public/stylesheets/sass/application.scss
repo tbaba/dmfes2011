@@ -73,8 +73,35 @@ body {
   -webkit-border-radius:10px;
 }
 
-#contents article {
-  width:70%;
+#contents:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 1px;
+  overflow: hidden;
+}
+
+/*\*/
+* html #contents {
+  height: 1em;
+}
+
+#containerC {
+  display: block;
+}
+/**/
+
+.left_col {
+  float:left;
+  width:600px;
+}
+
+.right_col {
+  float:right;
+  width:270px;
+}
+
+#contents .left_col article {
   padding:5px;
   border-radius:5px;
   -moz-border-radius:5px;
