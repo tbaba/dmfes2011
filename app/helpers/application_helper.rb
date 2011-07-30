@@ -16,7 +16,7 @@ module ApplicationHelper
       'access'
     when ['welcome', 'news']
       'news'
-    when ['articles', a]
+    when ['news', a]
       'news'
     when ['welcome', 'artists']
       'artists'

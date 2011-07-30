@@ -5,6 +5,8 @@ Dmfes::Application.routes.draw do
   get 'about' => 'welcome#about'
   get 'access' => 'welcome#access'
 
+  resources :news, :only => [:index, :show]
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

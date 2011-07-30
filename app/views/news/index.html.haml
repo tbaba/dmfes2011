@@ -1,0 +1,7 @@
+- @newses.each do |news|
+  %article
+    %h2
+      .date= news.created_at.strftime('%m/%d')
+      .title= news.title
+    .body= simple_format news.body
+    .created= news.created_at.strftime('%Y/%m/%d %H:%M:%S')
