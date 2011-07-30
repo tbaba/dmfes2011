@@ -1,9 +1,9 @@
 Dmfes::Application.routes.draw do
-  get "welcome/index"
 
-  get "welcome/about"
+  root :to => 'welcome#index'
 
-  get "welcome/access"
+  get 'about' => 'welcome#about'
+  get 'access' => 'welcome#access'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
