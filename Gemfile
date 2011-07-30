@@ -7,6 +7,7 @@ gem 'haml'
 gem 'sass'
 gem 'haml-rails'
 gem 'jquery-rails'
+gem 'rails3-generators'
 
 group :test do
   gem 'rspec'
