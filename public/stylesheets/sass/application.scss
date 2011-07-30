@@ -29,20 +29,12 @@ body {
             -webkit-border-top-right-radius: 5px;
             -moz-border-radius-topleft: 5px;
             -moz-border-radius-topright: 5px;
-            &.top {
-                background:gray;
-            }
-            &.news {
-                background:red;
-            }
-            &.about {
-                background:yellow;
-            }
-            &.artists {
-                background:blue;
-            }
-            &.access {
-                background:green;
+            &.current {
+              &.top { background:gray; }
+              &.news { background:red; }
+              &.about { background:yellow; }
+              &.artists { background:blue; }
+              &.access { background:green; }
             }
         }
     }
@@ -54,4 +46,9 @@ body {
 
 #contents {
     clear:both;
+    &.top { border:2px solid gray; }
+    &.news { border:2px solid red; }
+    &.about { border:2px solid yellow; }
+    &.artists { border:2px solid blue; }
+    &.access { border:2px solid green; }
 }

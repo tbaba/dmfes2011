@@ -12,13 +12,13 @@
       #header
         %h1= "Dolce Music Festival"
         %ul#gnav
-          %li.top= "TOP"
-          %li.news= "NEWS"
-          %li.about= "ABOUT"
-          %li.artists= "ARTISTS"
-          %li.access= "ACCESS"
+          %li{:class => current_tab('top')}= "TOP"
+          %li{:class => current_tab('news')}= "NEWS"
+          %li{:class => current_tab('about')}= "ABOUT"
+          %li{:class => current_tab('artists')}= "ARTISTS"
+          %li{:class => current_tab('access')}= "ACCESS"
 
-      #contents
+      #contents{:class => current_tab_name}
         = yield
 
       #footer
