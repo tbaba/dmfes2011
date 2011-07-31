@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/koppen/hassle.git
+  revision: bb49cd8b37f5369d08398897caf1b687eaa80458
+  specs:
+    hassle (0.0.1)
+      haml
+      rack
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -39,9 +47,6 @@ GEM
       activesupport (~> 3.0)
       haml (~> 3.0)
       railties (~> 3.0)
-    hassle (0.0.1)
-      haml
-      rack
     i18n (0.5.0)
     jquery-rails (1.0.12)
       railties (~> 3.0)
@@ -103,7 +108,7 @@ PLATFORMS
 DEPENDENCIES
   haml
   haml-rails
-  hassle
+  hassle!
   jquery-rails
   rails (= 3.0.9)
   rails3-generators

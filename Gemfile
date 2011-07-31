@@ -8,7 +8,7 @@ gem 'sass'
 gem 'haml-rails'
 gem 'jquery-rails'
 gem 'rails3-generators'
-gem 'hassle'
+gem 'hassle', :git => 'git://github.com/koppen/hassle.git'
 
 group :test do
   gem 'rspec'
