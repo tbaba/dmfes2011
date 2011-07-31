@@ -1,6 +1,7 @@
+%h2 News
 - @newses.each do |news|
   %article
-    %h2
+    %h3.article
       .date= news.created_at.strftime('%m/%d')
       .title= news.title
     .body= simple_format news.body

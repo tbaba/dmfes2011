@@ -90,7 +90,6 @@ body {
 
 .left_col {
   float:left;
-  width:600px;
 }
 
 .right_col {
@@ -98,7 +97,8 @@ body {
   width:270px;
 }
 
-#contents .left_col article {
+#contents .left_col {
+  width:590px;
   padding:5px;
   border-radius:5px;
   -moz-border-radius:5px;
@@ -106,36 +106,55 @@ body {
   background:$white;
 
   h2 {
-    .date {
-      font-size:14px;
-      font-weight:bold;
-      width:50px;
-      float:left;
-
-      padding:3px;
-      border-radius:3px;
-      -moz-border-radius:3px;
-      -webkit-border-radius:3px;
-      border:1px dotted $gray;
-    }
-    .title {float:left;}
-  }
-  h3 {
-    margin:1em;
-    border-left:10px solid $gray;
-    padding-left:5px;
-  }
-  .body {
-    clear:both;
+    margin:0 0 1em;
   }
 
-  .concept, .attention {
-    margin-bottom:1em;
-    h4 {
-      margin:0 1em;
+  article {
+    h3 {
+      margin:1em;
+      border-left:10px solid $gray;
+      padding-left:5px;
     }
-    p {
-      margin:0 1.5em;
+    h3.article {
+      border:0;
+      margin:0;
+      padding:0;
+      .date {
+        text-align:center;
+        font-size:12px;
+        font-weight:bold;
+        width:50px;
+        float:left;
+
+        padding:3px;
+        border-radius:3px;
+        -moz-border-radius:3px;
+        -webkit-border-radius:3px;
+        border:1px dotted $gray;
+      }
+      .title {
+        font-size:14px;
+        float:left;
+        margin:1px 0 1px 10px;
+      }
+    }
+    .body {
+      font-size:12px;
+      clear:both;
+    }
+    .created {
+      font-size:10px;
+      text-align:right;
+    }
+
+    .concept, .attention {
+      margin-bottom:1em;
+      h4 {
+        margin:0 1em;
+      }
+      p {
+        margin:0 1.5em;
+      }
     }
   }
 }
