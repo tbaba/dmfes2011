@@ -1,3 +1,5 @@
+@import "colors";
+
 h1, h2, h3, h4, h5, h6,
 p, div, span,
 form, input, textarea,
@@ -27,11 +29,11 @@ body {
       float:left;
       -webkit-border-radius:5px;
       -moz-border-radius:5px;
-      &.top { background:gray; }
-      &.news { background:red; }
-      &.about { background:yellow; }
-      &.artists { background:blue; }
-      &.access { background:green; }
+      &.top { background:gray; a{ color:white;} }
+      &.news { background:red; a{ color:white;} }
+      &.about { background:yellow; color:black; a{ color:black;} }
+      &.artists { background:blue; color:white; a{ color:white;} }
+      &.access { background:green; color:white; a{ color:white;} }
       &.current {
         height:33px;
         -webkit-border-bottom-left-radius: 0;
@@ -101,7 +103,7 @@ body {
   border-radius:5px;
   -moz-border-radius:5px;
   -webkit-border-radius:5px;
-  background:white;
+  background:$white;
 
   h2 {
     .date {
@@ -114,7 +116,7 @@ body {
       border-radius:3px;
       -moz-border-radius:3px;
       -webkit-border-radius:3px;
-      border:1px dotted gray;
+      border:1px dotted $gray;
     }
     .title {float:left;}
   }
