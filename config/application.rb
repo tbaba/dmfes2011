@@ -1,5 +1,6 @@
 require File.expand_path('../boot', __FILE__)
 
+require 'hassle'
 require 'rails/all'
 
 # If you have a Gemfile, require the gems listed there, including any gems
@@ -43,5 +44,7 @@ module Dmfes
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+
+    config.middleware.use Hassle
   end
 end

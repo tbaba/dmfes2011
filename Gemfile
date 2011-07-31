@@ -8,6 +8,7 @@ gem 'sass'
 gem 'haml-rails'
 gem 'jquery-rails'
 gem 'rails3-generators'
+gem 'hassle'
 
 group :test do
   gem 'rspec'
